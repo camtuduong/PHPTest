@@ -260,7 +260,7 @@ $total_pages = ceil($total_row['total'] / $limit);
     <nav class="navbar navbar-expand-lg navbar-dark mb-4">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <i class="fas fa-users-cog me-2"></i> QUẢN LÝ NHÂN VIÊN
+                <i class="fas fa-users-cog me-2"></i> QUẢN LÝ NHÂN VIÊN Tu's System
             </a>
             <div class="d-flex align-items-center">
                 <div class="user-info me-3">
