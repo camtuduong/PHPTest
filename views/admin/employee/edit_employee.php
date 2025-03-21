@@ -72,81 +72,81 @@ $conn->close();
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+    body {
+        background-color: #f8f9fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        .card {
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            border: none;
-        }
+    .card {
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
 
-        .form-control,
-        .form-select {
-            border-radius: 8px;
-            padding: 10px 15px;
-            border: 1px solid #ced4da;
-            transition: all 0.3s;
-        }
+    .form-control,
+    .form-select {
+        border-radius: 8px;
+        padding: 10px 15px;
+        border: 1px solid #ced4da;
+        transition: all 0.3s;
+    }
 
-        .form-control:focus,
-        .form-select:focus {
-            box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
-            border-color: #ffc107;
-        }
+    .form-control:focus,
+    .form-select:focus {
+        box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.25);
+        border-color: #ffc107;
+    }
 
-        .btn {
-            border-radius: 8px;
-            padding: 10px 20px;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
+    .btn {
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-weight: 500;
+        transition: all 0.3s;
+    }
 
-        .btn-warning {
-            background-color: #ffc107;
-            color: #212529;
-        }
+    .btn-warning {
+        background-color: #ffc107;
+        color: #212529;
+    }
 
-        .btn-warning:hover {
-            background-color: #e0a800;
-            transform: translateY(-2px);
-        }
+    .btn-warning:hover {
+        background-color: #e0a800;
+        transform: translateY(-2px);
+    }
 
-        .btn-secondary {
-            background-color: #6c757d;
-        }
+    .btn-secondary {
+        background-color: #6c757d;
+    }
 
-        .btn-secondary:hover {
-            background-color: #5a6268;
-            transform: translateY(-2px);
-        }
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        transform: translateY(-2px);
+    }
 
-        h2 {
-            color: #ffc107;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
+    h2 {
+        color: #ffc107;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
 
-        .form-label {
-            font-weight: 500;
-            color: #495057;
-        }
+    .form-label {
+        font-weight: 500;
+        color: #495057;
+    }
 
-        .header-icon {
-            color: #ffc107;
-            margin-right: 10px;
-        }
+    .header-icon {
+        color: #ffc107;
+        margin-right: 10px;
+    }
 
-        .alert {
-            border-radius: 8px;
-        }
+    .alert {
+        border-radius: 8px;
+    }
 
-        .disabled-field {
-            background-color: #e9ecef;
-            cursor: not-allowed;
-        }
+    .disabled-field {
+        background-color: #e9ecef;
+        cursor: not-allowed;
+    }
     </style>
 </head>
 
@@ -160,17 +160,17 @@ $conn->close();
 
                 <!-- Hiển thị thông báo -->
                 <?php if (!empty($success)): ?>
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <i class="fas fa-check-circle me-2"></i><?php echo $success; ?>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <i class="fas fa-check-circle me-2"></i><?php echo $success; ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
                 <?php endif; ?>
 
                 <?php if (!empty($error)): ?>
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <i class="fas fa-exclamation-circle me-2"></i><?php echo $error; ?>
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <i class="fas fa-exclamation-circle me-2"></i><?php echo $error; ?>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
                 <?php endif; ?>
 
                 <div class="card p-4 mb-4">
@@ -225,7 +225,7 @@ $conn->close();
                                 <div class="input-group">
                                     <input type="number" name="Luong" class="form-control"
                                         value="<?php echo $employee['Luong']; ?>" required>
-                                    <span class="input-group-text">VNĐ</span>
+                                    <span class="input-group-text">$</span>
                                 </div>
                             </div>
                         </div>

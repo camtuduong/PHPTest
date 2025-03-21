@@ -207,7 +207,7 @@ $conn->close();
                                 <div class="input-group">
                                     <input type="number" name="Luong" class="form-control" required
                                         placeholder="Nhập lương">
-                                    <span class="input-group-text">VNĐ</span>
+                                    <span class="input-group-text">$</span>
                                 </div>
                             </div>
                         </div>

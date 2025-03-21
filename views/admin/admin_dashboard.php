@@ -318,7 +318,7 @@ $total_pages = ceil($total_row['total'] / $limit);
                                         </span>
                                     </td>
                                     <td class="text-end salary">
-                                        <?php echo number_format($row["Luong"], 0, ',', '.'); ?> <small>VND</small>
+                                        <?php echo number_format($row["Luong"], 0, ',', '.'); ?> <small>$</small>
                                     </td>
                                     <td class="text-center">
                                         <a href="./employee/edit_employee.php?id=<?php echo $row['Ma_NV']; ?>"
